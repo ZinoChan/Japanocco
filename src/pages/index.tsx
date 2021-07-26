@@ -1,19 +1,13 @@
 import * as React from "react"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "../components/Layout"
+import Seo from "../components/SEO"
 
-import tw from "twin.macro"
-
-const Header = tw.h1`
-  text-blue-600 text-4xl
-`
+import Title from "../components/ui/Title"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-
-    <Header>Hello</Header>
   </Layout>
 )
 

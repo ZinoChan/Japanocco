@@ -1,1 +1,6 @@
 import './src/styles/global.css'
+import '@fontsource/dm-sans'
+import '@fontsource/dm-sans/700.css'
+import '@fontsource/poppins'
+import '@fontsource/poppins/700.css'
+import '@fontsource/poppins/600.css'
