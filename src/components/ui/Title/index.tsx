@@ -1,16 +1,17 @@
 import React from "react"
 import * as Styled from "./styles"
 
-interface Props {
+export interface TitleProps {
   title: string
-  text: string
+  content: string
+  hero?: boolean
 }
 
-const Title: React.FC<Props> = ({ title, text }) => {
+const Title: React.FC<TitleProps> = ({ hero, title, content }) => {
   return (
     <Styled.TitleContainer>
-      <Styled.Heading>{title}</Styled.Heading>
-      <Styled.Text>{text}</Styled.Text>
+      <Styled.Heading hero={hero}>{title}</Styled.Heading>
+      <Styled.Text>{content}</Styled.Text>
       <Styled.Line></Styled.Line>
     </Styled.TitleContainer>
   )
