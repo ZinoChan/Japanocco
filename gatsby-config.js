@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/Japanocco",
   siteMetadata: {
     title: `Japanocco`,
     description: `Travel Blog, for people want to visit japan or morocco, to see information about places and culture.`,
