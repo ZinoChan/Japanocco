@@ -1,5 +1,5 @@
 ---
-category: "city blog"
+category: "japan city blog"
 cover: "./tokyo-tower.jpg"
 title: "Tokyo Tower"
 description: "Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat."

@@ -1,5 +1,5 @@
 ---
-category: "city blog"
+category: "japan city blog"
 cover: "./hokaido.jpg"
 title: "Hokaido"
 description: "Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. 

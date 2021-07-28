@@ -1,5 +1,5 @@
 ---
-category: "city blog"
+category: "japan city blog"
 cover: "./kyoto-river.jpg"
 title: "Kyoto river"
 description: "Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat."

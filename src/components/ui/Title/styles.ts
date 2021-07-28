@@ -8,12 +8,12 @@ export interface StyledProps {
 }
 
 export const TitleContainer = tw.div`
-    mb-8 max-w-2xl
+    mb-8 max-w-xl
 `
 
 export const Heading  = styled(motion.h2)(({hero}: StyledProps) => [
     tw `font-main font-bold text-primary mb-4`,
-    hero ? tw`text-6xl` : tw`text-3xl`,
+    hero ? tw`text-5xl` : tw`text-3xl`,
     
 ]) 
 
