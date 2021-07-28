@@ -2,6 +2,7 @@ import * as React from "react"
 import * as Styled from "./styles"
 import { Link } from "gatsby"
 import { Container } from "../ui/Container/styles"
+import Logo from "../ui/Logo"
 
 const Header = () => {
   const routes = [
@@ -16,7 +17,7 @@ const Header = () => {
     <Styled.Header>
       <Container>
         <Styled.Navbar>
-          <div>Logo</div>
+          <Logo />
           <Styled.Navlist>
             {routes.map((route, index) => (
               <li key={`${route.name}-${index}`}>

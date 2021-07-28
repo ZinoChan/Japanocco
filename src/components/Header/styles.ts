@@ -15,5 +15,7 @@ export const Navlist = tw.ul`
 `
 
 export const NavLink = tw.span`
-    font-poppins font-semibold text-lg text-gray-800 capitalize
+    font-poppins font-semibold text-lg text-gray-800 capitalize hover:text-secondary
 `
+
+
