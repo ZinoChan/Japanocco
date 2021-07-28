@@ -14,6 +14,6 @@ export const Navlist = tw.ul`
     flex space-x-6 items-center
 `
 
-export const NavLink = tw.a`
+export const NavLink = tw.span`
     font-poppins font-semibold text-lg text-gray-800 capitalize
 `

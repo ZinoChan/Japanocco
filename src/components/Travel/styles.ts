@@ -6,5 +6,9 @@ export const BtnContainer = tw.div`
 
 
 export const SliderContainer = tw.div`
-    max-w-screen-lg mx-auto overflow-hidden
+    max-w-screen-lg mx-auto 
+`
+
+export const LinkText = tw.span`
+    font-poppins font-semibold hover:text-secondary  block text-center mt-8 text-lg capitalize text-primary
 `

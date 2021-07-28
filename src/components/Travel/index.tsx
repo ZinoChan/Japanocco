@@ -56,11 +56,7 @@ const Travel = () => {
               title
               cover {
                 childImageSharp {
-                  gatsbyImageData(
-                    placeholder: TRACED_SVG
-                    width: 300
-                    height: 320
-                  )
+                  gatsbyImageData(placeholder: BLURRED, width: 300, height: 320)
                 }
               }
             }
@@ -96,6 +92,9 @@ const Travel = () => {
               )
             })}
           </Carousel>
+          <Link to="/cities">
+            <Styled.LinkText>View more</Styled.LinkText>
+          </Link>
         </Styled.SliderContainer>
       </Container>
     </Section>

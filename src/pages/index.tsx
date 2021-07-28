@@ -1,4 +1,6 @@
 import * as React from "react"
+import Culture from "../components/Culture"
+import Food from "../components/Food"
 import HeroBanner from "../components/HeroBanner"
 
 import Layout from "../components/Layout"
@@ -10,6 +12,8 @@ const IndexPage = () => (
     <Seo title="Home" />
     <HeroBanner />
     <Travel />
+    <Culture />
+    <Food />
   </Layout>
 )
 

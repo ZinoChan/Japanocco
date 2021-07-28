@@ -1,7 +1,10 @@
+import styled from "@emotion/styled";
 import tw from "twin.macro";
 
-export const CardContainer = tw.div`
-    rounded-lg overflow-hidden shadow-xl bg-white w-max
+
+export const CardContainer = styled.div`
+    ${tw`rounded-lg overflow-hidden  bg-white w-max`};
+    box-shadow: 0 16px 50px rgba(0,0,0, 0.1);
 `
 
 export const TextContainer = tw.div`
@@ -21,5 +24,5 @@ export const Location = tw.span`
 `
 
 export const CardLink = tw.span`
-font-poppins font-semibold text-sm text-secondary
+    font-poppins font-semibold text-sm text-secondary
 `
