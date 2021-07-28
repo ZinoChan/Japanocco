@@ -1,0 +1,2 @@
+(self.webpackChunkjapanocco_travel_blog=self.webpackChunkjapanocco_travel_blog||[]).push([[218],{938:function(t,n,e){"use strict";e.r(n);var u=e(7294),a=e(3431);n.default=function(){return(0,a.tZ)(u.Fragment,null,(0,a.tZ)("h1",null,"404: Not Found"),(0,a.tZ)("p",null,"You just hit a route that doesn't exist... the sadness."))}}}]);
+//# sourceMappingURL=component---src-pages-404-tsx-1a93c3e54f068a7f5b9f.js.map
