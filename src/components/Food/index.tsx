@@ -34,12 +34,10 @@ const Food = () => {
       ) {
         edges {
           node {
-            fields {
-              slug
-            }
             id
             frontmatter {
               title
+              slug
               cover {
                 childImageSharp {
                   gatsbyImageData(placeholder: BLURRED, width: 290, height: 490)
@@ -63,14 +61,13 @@ const Food = () => {
           {foodPosts.map((item, index) => {
             const {
               id,
-              fields: { slug },
-              frontmatter: { cover, title },
+              frontmatter: { cover, title, slug },
             } = item.node
 
             const image = getImage(cover)
 
             return (
-              <Link to={slug} key={id}>
+              <Link to={`food/blog/${slug}`} key={id}>
                 <Styled.ImgCard margin={index % 2 === 0}>
                   <GatsbyImage image={image} alt="food" />
                   <Styled.ImgOverlay>

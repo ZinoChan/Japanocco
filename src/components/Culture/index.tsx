@@ -27,12 +27,10 @@ const Culture = () => {
       ) {
         edges {
           node {
-            fields {
-              slug
-            }
             id
             frontmatter {
               title
+              slug
               cover {
                 childImageSharp {
                   gatsbyImageData(placeholder: BLURRED)
@@ -56,14 +54,13 @@ const Culture = () => {
           {culturePosts.map(item => {
             const {
               id,
-              fields: { slug },
-              frontmatter: { cover, title },
+              frontmatter: { cover, title, slug },
             } = item.node
 
             const image = getImage(cover)
 
             return (
-              <Link to={slug} key={id}>
+              <Link to={`blog/${slug}`} key={id}>
                 <Styled.ImgContainer>
                   <Styled.Overlay />
                   <GatsbyImage image={image} alt="cover" />

@@ -47,11 +47,9 @@ const Travel = () => {
       ) {
         edges {
           node {
-            fields {
-              slug
-            }
             id
             frontmatter {
+              slug
               city
               title
               cover {
@@ -82,11 +80,10 @@ const Travel = () => {
             {cities.map(item => {
               const {
                 id,
-                fields: { slug },
-                frontmatter: { title, city, cover },
+                frontmatter: { title, city, cover, slug },
               } = item.node
               return (
-                <Link key={id} to={slug}>
+                <Link key={id} to={`cities/blog/${slug}`}>
                   <Card image={cover} title={title} location={city} />
                 </Link>
               )

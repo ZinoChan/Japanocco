@@ -4,8 +4,10 @@ cover: "./kyoto-river.jpg"
 title: "Kyoto river"
 description: "Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat."
 city: "Kyoto"
+route: "cities"
 tags: ["Japan"]
 published: true
+slug: "kyoto-river"
 ---
 
 _Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat._.

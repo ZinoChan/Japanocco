@@ -1,12 +1,25 @@
-const { createFilePath } = require(`gatsby-source-filesystem`)
-exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions
-  if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` })
-    createNodeField({
-      node,
-      name: `slug`,
-      value: slug,
-    })
+const path = require('path');
+
+
+exports.createPages = async ({graphql, actions}) => {
+  const { data } = await graphql(`
+  query Posts {
+    allMarkdownRemark {
+      nodes {
+        frontmatter {
+          slug
+          route
+        }
+      }
+    }
   }
+  `)
+
+  data.allMarkdownRemark.nodes.forEach(node => {
+    actions.createPage({
+      path: `${node.frontmatter.route}/blog/${node.frontmatter.slug}`,
+      component: path.resolve('./src/templates/BlogPost/index.tsx'),
+      context: { slug: node.frontmatter.slug }
+    })
+  });
 }
