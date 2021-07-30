@@ -1,0 +1,1 @@
+(self.webpackChunkjapanocco_travel_blog=self.webpackChunkjapanocco_travel_blog||[]).push([[125],{8740:function(){}}]);
