@@ -6,6 +6,6 @@ export interface StyledProps {
 }
 
 export const Section = styled.section(({padding}: StyledProps) => [
-    tw`flex items-center py-20`,
+    tw`flex items-center py-20 overflow-hidden`,
     padding && tw`py-20`
 ])

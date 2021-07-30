@@ -17,17 +17,6 @@ interface TravelProps {
   linkText: string
 }
 
-const settings = {
-  autoplay: true,
-  autoplaySpeed: 5000,
-  speed: 500,
-  infinite: true,
-  dots: true,
-  arrows: false,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-}
-
 const Travel = () => {
   const { markdownRemark, allMarkdownRemark } = useStaticQuery(graphql`
     query {
@@ -76,7 +65,7 @@ const Travel = () => {
           <Button>{travel.type_2}</Button>
         </Styled.BtnContainer>
         <Styled.SliderContainer>
-          <Carousel settings={settings}>
+          <Carousel>
             {cities.map(item => {
               const {
                 id,

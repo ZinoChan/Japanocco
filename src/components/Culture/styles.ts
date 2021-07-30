@@ -2,7 +2,7 @@ import tw from "twin.macro";
 import styled from '@emotion/styled';
 
 export const GridContainer = tw.div`
-    grid grid-cols-2 gap-12 justify-center mt-12
+    grid md:grid-cols-2 grid-cols-1 gap-12 justify-center mt-12
 `
 
 

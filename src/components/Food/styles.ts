@@ -6,12 +6,12 @@ export interface StyledProps {
 }
 
 export const ImgContainer = tw.div`
-    grid grid-cols-4 gap-8 mt-28 mb-16
+    grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-items-center gap-8 mt-28 mb-16
 `
 
 export const ImgCard = styled.div(({margin}: StyledProps) => [
     tw`rounded-lg relative w-max overflow-x-hidden`,
-    margin && tw`-mt-10`
+    margin && tw`xl:-mt-10`
 ])
 
 export const ImgOverlay = styled.div`

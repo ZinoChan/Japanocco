@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
     <>
       <Header />
 
-      <main>{children}</main>
+      <main className="overflow-hidden">{children}</main>
       <Footer />
     </>
   )

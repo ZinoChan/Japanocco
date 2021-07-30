@@ -1,11 +1,11 @@
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import React from "react"
-import { BannerContainer } from "../HeroBanner/styles"
 import Container from "../ui/Container"
 import Section from "../ui/Section"
 import Title from "../ui/Title"
 import Button from "../ui/Button"
 import { useStaticQuery, graphql } from "gatsby"
+import * as Styled from "./styles"
 
 const Language = () => {
   const { markdownRemark } = useStaticQuery(graphql`
@@ -33,7 +33,7 @@ const Language = () => {
   return (
     <Section>
       <Container>
-        <BannerContainer>
+        <Styled.ContentContainer>
           <div>
             <Title title={language.title} content={language.content} />
             <Button primary>{language.linkText}</Button>
@@ -41,7 +41,7 @@ const Language = () => {
           <div>
             <GatsbyImage image={image} alt="langs" />
           </div>
-        </BannerContainer>
+        </Styled.ContentContainer>
       </Container>
     </Section>
   )

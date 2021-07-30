@@ -60,7 +60,7 @@ const Culture = () => {
             const image = getImage(cover)
 
             return (
-              <Link to={`blog/${slug}`} key={id}>
+              <Link to={`culture/blog/${slug}`} key={id}>
                 <Styled.ImgContainer>
                   <Styled.Overlay />
                   <GatsbyImage image={image} alt="cover" />

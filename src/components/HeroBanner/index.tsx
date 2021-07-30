@@ -6,6 +6,7 @@ import Title, { TitleProps } from "../ui/Title"
 import Button from "../ui/Button"
 import * as Styled from "./styles"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import Carousel from "../ui/Carousel"
 
 interface HeroBannerSection extends TitleProps {
   linkTo: string
@@ -28,7 +29,7 @@ const HeroBanner: React.FC = () => {
           }
           cover_2 {
             childImageSharp {
-              gatsbyImageData(placeholder: TRACED_SVG, width: 350, height: 400)
+              gatsbyImageData(placeholder: TRACED_SVG, width: 400, height: 350)
             }
           }
           cover_3 {
@@ -75,6 +76,18 @@ const HeroBanner: React.FC = () => {
               <GatsbyImage image={image_4} alt="cover" />
             </div>
           </Styled.ImgContainer>
+          <Styled.MobileImgContainer>
+            <Carousel>
+              {[image_1, image_2, image_3, image_4].map((img, index) => (
+                <div
+                  className="px-2 rounded-lg overflow-hidden"
+                  key={`img-${index}`}
+                >
+                  <GatsbyImage image={img} alt="cover" />
+                </div>
+              ))}
+            </Carousel>
+          </Styled.MobileImgContainer>
         </Styled.BannerContainer>
       </Container>
     </Section>
