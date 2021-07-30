@@ -6,7 +6,7 @@ export const Footer = tw.footer`
 `
 
 export const FooterNav = tw.ul`
-flex space-x-6 items-center my-10 justify-center
+flex md:flex-row flex-col md:space-x-6 md:space-y-0 space-y-4 items-center my-10 justify-center
 `
 
 export const FooterContent = tw.div`
