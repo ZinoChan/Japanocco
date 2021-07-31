@@ -66,7 +66,7 @@ const HeroBanner: React.FC = () => {
             <div className="absolute -right-10 top-20  overflow-hidden rounded-lg">
               <GatsbyImage image={image_1} alt="cover" />
             </div>
-            <div className="absolute z-20 bottom-20 right-20 overflow-hidden rounded-lg">
+            <div className="absolute z-20 bottom-40 right-20 overflow-hidden rounded-lg">
               <GatsbyImage image={image_2} alt="cover" />
             </div>
             <div className="absolute top-1/2 transform -translate-y-1/2 right-0 transform translate-x-1/2 overflow-hidden rounded-lg">

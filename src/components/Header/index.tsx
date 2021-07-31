@@ -5,6 +5,8 @@ import { Container } from "../ui/Container/styles"
 import Logo from "../ui/Logo"
 import { Squash as Hamburger } from "hamburger-react"
 import { useState } from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons"
 
 const Header = () => {
   const routes = [
@@ -16,6 +18,7 @@ const Header = () => {
   ]
 
   const [isOpen, setOpen] = useState(false)
+  const [dropdown, setDropdown] = useState(false)
 
   return (
     <Styled.Header>
@@ -30,6 +33,18 @@ const Header = () => {
                 </Link>
               </li>
             ))}
+            <Styled.DropDownList onClick={() => setDropdown(!dropdown)}>
+              <Styled.NavLink>culture</Styled.NavLink>
+              <FontAwesomeIcon icon={dropdown ? faChevronUp : faChevronDown} />
+              <Styled.DropDownNav dropdown={dropdown}>
+                <Link to="/culture/japan">
+                  <Styled.NavLink>Japan</Styled.NavLink>
+                </Link>
+                <Link to="/culture/morocco">
+                  <Styled.NavLink>Morocco</Styled.NavLink>
+                </Link>
+              </Styled.DropDownNav>
+            </Styled.DropDownList>
           </Styled.Navlist>
           <Styled.MobileNavList isOpen={isOpen}>
             {routes.map((route, index) => (

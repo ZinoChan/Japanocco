@@ -6,6 +6,7 @@ import {motion} from 'framer-motion'
 interface StyledProps {
     isOpen?: boolean;
     mobile?: boolean;
+    dropdown?: boolean;
 }
 
 export const Header = styled(motion.header)(
@@ -21,7 +22,7 @@ export const Navlist = tw.ul`
 `
 
 export const NavLink = styled.span(({mobile}: StyledProps) => [
-    tw`font-poppins font-semibold text-lg  capitalize hover:text-secondary`,
+    tw`font-poppins font-semibold text-lg  capitalize hover:text-secondary cursor-pointer`,
     mobile ? tw`text-white` : tw`text-gray-800`
 ])
 
@@ -31,3 +32,12 @@ export const MobileNavList = styled.ul(({isOpen}: StyledProps) => [
      
 ])
 
+
+export const DropDownList = tw.li`
+    relative flex items-center space-x-4 justify-between cursor-pointer hover:text-secondary
+`
+
+export const DropDownNav = styled.ul(({dropdown}: StyledProps) => [
+    tw` absolute z-40 top-full m-0 text-center p-4 left-0 bg-white shadow-lg rounded-lg  flex-col space-y-4`,
+    dropdown ? tw`flex` : tw`hidden`
+])
