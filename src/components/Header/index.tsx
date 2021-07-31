@@ -13,7 +13,6 @@ const Header = () => {
     { route: "/", name: "home" },
     { route: "/cities", name: "cities" },
     { route: "/food", name: "food" },
-    { route: "/culture", name: "culture" },
     { route: "/language", name: "language" },
   ]
 
@@ -54,6 +53,13 @@ const Header = () => {
                 </Link>
               </li>
             ))}
+
+            <Link to="/culture/japan">
+              <Styled.NavLink mobile>Japan culture</Styled.NavLink>
+            </Link>
+            <Link to="/culture/morocco">
+              <Styled.NavLink mobile>Morocco culture</Styled.NavLink>
+            </Link>
           </Styled.MobileNavList>
           <div className="md:hidden relative z-40">
             <Hamburger
